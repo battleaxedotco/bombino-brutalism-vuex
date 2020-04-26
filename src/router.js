@@ -15,9 +15,9 @@ export default new Router({
       component: () => import("./views/About.vue")
     },
     {
-      path: "/vuex",
-      name: 'vuex',
-      component: () => import("./views/Vuex.vue")
+      path: "/example",
+      name: 'example',
+      component: () => import("./views/Example.vue")
     }
   ]
 });

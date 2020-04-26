@@ -92,7 +92,7 @@ export default {
       // name/path: the target in ./src/router.js
       { label: "Home", name: "home" },
       { label: "About", path: "/about" },
-      { label: "Vuex", path: "/vuex" }
+      { label: "Example", path: "/example" }
 		]
   }),
   created() {
