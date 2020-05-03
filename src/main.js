@@ -6,8 +6,8 @@ import store from './store'
 Vue.config.productionTip = false;
 // Vue.config.devtools = false;
 
-// Brutalism library support
 import {
+  Anno,
   Alert,
   ButtonGroup,
   Button,
@@ -18,6 +18,8 @@ import {
   FileInput,
   Fold,
   Footer,
+  Link,
+  Grid,
   Icon,
   InputScroll,
   Input,
@@ -28,10 +30,10 @@ import {
   Tabs,
   TextArea,
   Toggle,
-  Wrapper,
-  Autofocus,
+  Wrapper
 } from "brutalism";
 
+Vue.component("Anno", Anno);
 Vue.component("Alert", Alert);
 Vue.component("Button-Group", ButtonGroup);
 Vue.component("Button", Button);
@@ -42,9 +44,11 @@ Vue.component("Dropzone", Dropzone);
 Vue.component("File-Input", FileInput);
 Vue.component("Fold", Fold);
 Vue.component("Footer", Footer);
+Vue.component("Grid", Grid);
 Vue.component("Icon", Icon);
 Vue.component("Input-Scroll", InputScroll);
 Vue.component("Input", Input);
+Vue.component("Link", Link);
 Vue.component("Menus", Menus);
 Vue.component("Panel-Info", PanelInfo);
 Vue.component("Panel", Panel);
@@ -53,7 +57,6 @@ Vue.component("Tabs", Tabs);
 Vue.component("TextArea", TextArea);
 Vue.component("Toggle", Toggle);
 Vue.component("Wrapper", Wrapper);
-Vue.directive("autofocus", Autofocus);
 
 new Vue({
   router,
