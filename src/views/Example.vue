@@ -126,7 +126,7 @@ export default {
 
 <style>
 .extra-padding {
-  padding: 80px 150px;
+  padding: 10px 20px;
 }
 
 .icon-list {

@@ -3,7 +3,7 @@
     <battleaxe-logo />
     <brutalism-title subtitle="vuex" />
     <Button-Group>
-      <Button block goto="https://battleaxe.dev">See the docs</Button>
+      <Button block goto="https://battleaxe.dev/brutalism-docs/#/">See the docs</Button>
       <Button block goto="https://github.com/Inventsable/brutalism#-brutalism">See the code</Button>
       <Button block goto="https://github.com/Inventsable/brutalism/issues/new">Report a bug</Button>
     </Button-Group>
