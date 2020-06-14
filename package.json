@@ -13,8 +13,8 @@
     "help": "bombino-cmd help"
   },
   "dependencies": {
-    "brutalism": "^1.6.3",
-    "cep-spy": "^1.1.1",
+    "brutalism": "^1.6.9",
+    "cep-spy": "^1.1.4",
     "cluecumber": "0.0.42",
     "core-js": "^3.1.2",
     "lokney": "^1.0.0",
@@ -28,7 +28,7 @@
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.1",
-    "bombino-commands": "^1.0.1",
+    "bombino-commands": "^1.0.4",
     "boxen": "^4.1.0",
     "chalk": "^2.4.2",
     "eslint": "^5.16.0",
