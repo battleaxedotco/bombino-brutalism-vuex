@@ -13,11 +13,11 @@
     "help": "bombino-cmd help"
   },
   "dependencies": {
-    "brutalism": "^1.8.3",
-    "cep-spy": "^1.2.1",
+    "brutalism": "^1.8.5",
+    "cep-spy": "^1.2.2",
     "cluecumber": "0.0.42",
     "core-js": "^3.1.2",
-    "lokney": "^1.0.4",
+    "lokney": "^1.0.6",
     "starlette": "^1.0.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.6",
