@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "brutalism": "^1.8.5",
-    "cep-spy": "^1.2.2",
+    "cep-spy": "^1.2.3",
     "cluecumber": "0.0.42",
     "core-js": "^3.1.2",
     "lokney": "^1.0.6",
