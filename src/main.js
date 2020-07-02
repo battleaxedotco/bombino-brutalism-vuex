@@ -28,10 +28,12 @@ import {
   PanelInfo,
   Panel,
   Row,
+  Select,
   Tabs,
   TextArea,
   Toggle,
   Wrapper,
+  WrapNode,
   FilePicker,
   ColorPicker,
 } from "brutalism";
@@ -58,10 +60,12 @@ Vue.component("Menus", Menus);
 Vue.component("Panel-Info", PanelInfo);
 Vue.component("Panel", Panel);
 Vue.component("Row", Row);
+Vue.component("Select", Select);
 Vue.component("Tabs", Tabs);
 Vue.component("TextArea", TextArea);
 Vue.component("Toggle", Toggle);
 Vue.component("Wrapper", Wrapper);
+Vue.component("wrap-node", WrapNode);
 
 new Vue({
   router,
