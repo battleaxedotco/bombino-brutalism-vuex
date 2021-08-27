@@ -4,42 +4,40 @@
       Dynamic menu component reactively handles all flyout and context menus.
       https://github.com/Inventsable/brutalism/tree/master/components/Menus
      -->
-     <Menus
-			refresh
-			:context="[
-				{
-					label: 'Learn more',
-					enabled: false
-				},
+    <Menus
+      refresh
+      :context="[
         {
-					label: 'Log menu item with callback',
-					checkable: true,
-					checked: true,
-					callback: checkMenu
-				},
+          label: 'Learn more',
+          enabled: false,
+        },
         {
-					label: 'Test evalScript',
-					callback: runTestScript
-				},
+          label: 'Log menu item with callback',
+          checkable: true,
+          checked: true,
+          callback: checkMenu,
+        },
+        {
+          label: 'Test evalScript',
+          callback: runTestScript,
+        },
         {
           label: 'Supporting infinite nesting!',
           menu: [
             {
               label: 'Hello',
-              menu: [
-                { label: 'World' }
-              ]
-            }
-          ]
-        }
-			]"
-			@contextClick="testClick"
-			:flyout="[
-        {
-          label: 'This flyout menu has a JSON structure!'
-        }
+              menu: [{ label: 'World' }],
+            },
+          ],
+        },
       ]"
-		/>
+      @contextClick="testClick"
+      :flyout="[
+        {
+          label: 'This flyout menu has a JSON structure!',
+        },
+      ]"
+    />
     <!-- 
       Tabs can easily handle Vue Router navigation for you. Unlike bombino-vue-router, we're not
       using the invert prop and place our Tabs above the Panel, meaning the Tabs appear at the top.
@@ -80,10 +78,10 @@
     https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x
 */
 
-import { evalScript } from 'brutalism'
+import { evalScript } from "workaround";
 
 // We need to import an Action to sync our Vuex store to our UI:
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
 
 export default {
   data: () => ({
@@ -92,26 +90,26 @@ export default {
       // name/path: the target in ./src/router.js
       { label: "Home", name: "home" },
       { label: "About", path: "/about" },
-      { label: "Example", path: "/example" }
-		]
+      { label: "Example", path: "/example" },
+    ],
   }),
   created() {
     // So that we can read them from LocalStorage and assign them to the store:
-    this.getAll()
+    this.getAll();
   },
   methods: {
     // We're importing an Action named 'getAll' from the name-spaced 'example' Vuex store module.
     // This method syncs our State to the backend data. Once called, our State will be up to date:
-    ...mapActions('example', ['getAll']),
+    ...mapActions("example", ["getAll"]),
     // We access it as if any other method of this component: notice this.getAll() in the above mounted cycle.
     // We want to do this early, like in a created() or mounted() lifecycle.
-    // 
-    // 
+    //
+    //
     testClick(item) {
-			console.log("Context menu click:", item);
+      console.log("Context menu click:", item);
     },
     checkMenu(item, index, val) {
-			console.log(item, index, val);
+      console.log(item, index, val);
     },
     // Can invoke any function as await evalScript(`functionName('${parameterVar}')`) if script is preloaded
     // Check out the "script-path" prop of <Panel> component above for easy script file load.
@@ -122,10 +120,10 @@ export default {
           return 'result from JSX file'
         }
         test();
-      `)
-      console.log(result)
+      `);
+      console.log(result);
     },
-  }
+  },
 };
 </script>
 
