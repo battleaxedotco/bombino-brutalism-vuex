@@ -78,7 +78,7 @@
     https://github.com/Adobe-CEP/CEP-Resources/tree/master/CEP_9.x
 */
 
-import { evalScript } from "workaround";
+import { evalScript } from "brutalism";
 
 // We need to import an Action to sync our Vuex store to our UI:
 import { mapActions } from "vuex";
